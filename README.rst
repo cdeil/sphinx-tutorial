@@ -37,9 +37,8 @@ the basics. It would be good if we get to cover Sections 5 and 6. Sections 7 to
 0. TODO
 -------
 
-* Add lots of little exercises
-* Post on Github as ``sphinx-tutorial``
-* Add final version to the repo? Intermediate versions?
+* Write and improve notes for most steps
+* Add lots of little exercises for each step
 
 1. Introduction
 ---------------
