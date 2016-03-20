@@ -32,7 +32,7 @@ Overview:
 
 It's hard to say how far we'll get within the given time. Sections 1 to 4 are
 the basics. It would be good if we get to cover Sections 5 and 6. Sections 7 to
-10 are optional, no worries if we don't get ot those.
+10 are optional, no worries if we don't get to those.
 
 0. TODO
 -------
@@ -42,6 +42,9 @@ the basics. It would be good if we get to cover Sections 5 and 6. Sections 7 to
 
 1. Introduction
 ---------------
+
+TODO: start directly by describing the ``astrospam`` example package.
+
 
 We'll start with a quick overview of Sphinx and related things by having a
 look at the following web pages.
