@@ -1,22 +1,31 @@
 Sphinx tutorial
 ===============
 
-These are the notes for a beginner `Sphinx <http://www.sphinx-doc.org/>`__
-tutorial  given by `Christoph Deil <https://github.com/cdeil>`__ on March 21,
-2016 at `PyAstro16 <http://python-in-astronomy.github.io/2016/>`__ .
+What is this?
++++++++++++++
 
-The goal is to get you up and running with Sphinx, i.e. the technical know-how
-to generate documentation for Python projects. We will **not** have time to talk
+* A one hour `Sphinx <http://www.sphinx-doc.org/>`__ tutorial introduction.
+* By `Christoph Deil <https://github.com/cdeil>`__ and `Stuart Mumford <https://github.com/cadair>`__ .
+* March 21, 2016 at `PyAstro16 <http://python-in-astronomy.github.io/2016/>`__ .
+
+You will learn how to add Sphinx documentation to a Python package (using the
+example ``astrospam`` Python package in this repo). The focus is exclusively on
+technical aspects how to work with Sphinx. We will **not** have time to talk
 about how to write good documentation, i.e. what content to create and how to
 structure it.
 
 You are encouraged to follow along, i.e. try out every step on your computer
-after I demo it.
+after we demo it.
 
-If you have a question, or something isn't working for you, or if I'm going too
-fast, please feel free to interrupt me at any time!
+**If you have a question, or something isn't working for you, or if I'm going too
+fast, please feel free to interrupt me at any time!**
 
-Overview:
+If we run out of time, we will do the last two sections (5. Autodoc and 6. Theme)
+as a demo. I.e. you'll watch us do them and then, if you like, do them
+yourself on your own time after the tutorial.
+
+Overview
+++++++++
 
 1. `Introduction <https://gist.github.com/cdeil/1ec8b694aea3952f5267#1-introduction>`__
 2. `Installation <https://gist.github.com/cdeil/1ec8b694aea3952f5267#2-installation>`__
@@ -24,15 +33,8 @@ Overview:
 4. `RST <https://gist.github.com/cdeil/1ec8b694aea3952f5267#4-RST>`__
 5. `Autodoc <https://gist.github.com/cdeil/1ec8b694aea3952f5267#5-autodoc>`__
 6. `Theme <https://gist.github.com/cdeil/1ec8b694aea3952f5267#6-theme>`__
-7. `Plots <https://gist.github.com/cdeil/1ec8b694aea3952f5267#7-plots>`__
-8. `setup.py integration <https://gist.github.com/cdeil/1ec8b694aea3952f5267#8-setuppy-integration>`__
-9. `Doctests <https://gist.github.com/cdeil/1ec8b694aea3952f5267#9-doctests>`__
-10. `Final comments <https://gist.github.com/cdeil/1ec8b694aea3952f5267#10-final-comments>`__
+7. `Final comments <https://gist.github.com/cdeil/1ec8b694aea3952f5267#7-final-comments>`__
 
-
-It's hard to say how far we'll get within the given time. Sections 1 to 4 are
-the basics. It would be good if we get to cover Sections 5 and 6. Sections 7 to
-10 are optional, no worries if we don't get to those.
 
 0. TODO
 -------
@@ -147,41 +149,10 @@ Explain about `__all__`
 6. Theme
 --------
 
-* Readthedocs template
+TODO: show how to change to the readthedocs template and what changes.
 
-7. Plot directive
+7. Final comments
 -----------------
-
-TODO: give example
-Explain how it works and how it's usually the 
-
-8. setup.py integration
------------------------
-
-Astropy, affiliated packages and some other Python packages have integrated
-Sphinx as a subcommand in ``setup.py``, i.e. instead of running
-``cd docs && make html`` developers should run ``python setup.py build_sphinx``.
-
-TODO: comments on ``sys.path``
-
-As the last step, let's make edits to the Sphinx documentation of a
-large Python project: Astropy.
-
-Clone https://github.com/astropy/astropy and make two docs edits:
-
-* ``docs/coordinates/index.rst`` --- what?
-* ``astropy/coordinates/angle.py`` -- what?
-
-Run ``python setup.py build_sphinx`` and explain how to check the result.
-
-
-9. Doctests
------------
-
-Sphould we cover doctests
-
-10. Final comments
-------------------
 
 * We hope that this tutorial gave you a basic understanding of what Sphinx is,
   how it works, and how you use it to generate the documentation for Python
@@ -189,6 +160,9 @@ Sphould we cover doctests
 * You should now be able to contribute to the documentation of existing
   Python projects and maybe even be able to set up Sphinx for your own
   package (e.g. by copy & pasting the working `package-template <https://github.com/astropy/package-template>`__ setup).
+* There's many things we didn't cover that will come up if you start contributing
+  to Sphinx documentation for projects like Astropy or Astropy-affiliated packages:
+  plot directive, setup.py integration, doctests, ...
 * Sphinx, like other documentation generators such as LaTeX or Doxygen, is a
   very complicated, and extremely extensible and customisable tool.
   Even with years of experience you can easily get stuck with an uncomprehensible
