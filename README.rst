@@ -298,12 +298,14 @@ http://www.sphinx-doc.org/en/stable/rest.html
 Exercise 1
 ++++++++++
 
-* Edit ``index.rst`` and add this line after the title::
+Let's do the documentation writing cycle once:
+
+1. Edit ``index.rst`` and add this line after the title::
 
     Hello world!
 
-* Run ``make html``
-* Refresh the browser and watch the text appear in the HTML output.
+2. Run ``make html``
+3. Refresh the browser and watch the text appear in the HTML output.
 
 Exercise 2
 ++++++++++
@@ -326,8 +328,27 @@ Exercise 2
 Exercise 3
 ++++++++++
 
-* TODO: something that causes a Sphinx warning
+Let's see what happens if we make an ``RST`` formatting mistake.
+
+Remove some underline characters from the title::
+
+    Welcome to astrospam's documentation!
+    ============================
+
+Sphinx will emit a warning pointing out the file and line number where the problem is
+and give a helpful message what the problem is::
+
+    docs/index.rst:7: WARNING: Title underline too short.
+
+The HTML output will still be OK .. it's just a warning.
+
+Exercise 4
+++++++++++
+
 * TODO: something that causes a Sphinx error
+
+Exercise 5
+++++++++++
 
 * Add a sub-page ``tutorial.rst`` and some more content there.
 
