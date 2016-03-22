@@ -9,20 +9,17 @@ What is this?
 * March 21, 2016 at `PyAstro16 <http://python-in-astronomy.github.io/2016/>`__ .
 
 You will learn how to add Sphinx documentation to a Python package (using the
-example ``astrospam`` Python package in this repo). The focus is exclusively on
-technical aspects how to work with Sphinx. We will **not** have time to talk
-about how to write good documentation, i.e. what content to create and how to
-structure it.
+example ``astrospam`` Python package in this repo).
+
+The focus is exclusively on technical aspects how to work with Sphinx. We will
+**not** have time to talk about how to write good documentation, i.e. what
+content to create and how to structure it.
 
 You are encouraged to follow along, i.e. try out every step on your computer
 after we demo it.
 
 **If you have a question, or something isn't working for you, or if I'm going too
 fast, please feel free to interrupt me at any time!**
-
-If we run out of time, we will do the last two sections (5. Autodoc and 6. Theme)
-as a demo. I.e. you'll watch us do them and then, if you like, do them
-yourself on your own time after the tutorial.
 
 Overview
 ++++++++
@@ -35,21 +32,14 @@ Overview
 6. `Theme <https://gist.github.com/cdeil/1ec8b694aea3952f5267#6-theme>`__
 7. `Final comments <https://gist.github.com/cdeil/1ec8b694aea3952f5267#7-final-comments>`__
 
-
-0. TODO
--------
-
-* Write and improve notes for most steps
-* Add lots of little exercises for each step
-
 1. Introduction
 ---------------
 
-TODO: start directly by describing the ``astrospam`` example package.
-
-
 We'll start with a quick overview of Sphinx and related things by having a
 look at the following web pages.
+
+If you want to learn more, please go back and read the info on those pages
+after the tutorial on your own.
 
 * We won't talk about `this Sphinx <https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Great_Sphinx_of_Giza_-_20080716a.jpg/800px-Great_Sphinx_of_Giza_-_20080716a.jpg>`_.
 * `Wikipedia on Sphinx (documentation generator) <https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)>`__
@@ -66,11 +56,7 @@ look at the following web pages.
   `Astropy <http://astropy.readthedocs.org/en/latest/>`__,
   `Astroplan <http://astroplan.readthedocs.org/>`__
 
-If you want to learn more, please go back and read the info on those pages
-after the tutorial on your own.
-
-For now, let's go ahead with our hands-on introduction to Sphinx and
-start using it ...
+Let's go ahead with our hands-on introduction to Sphinx and start using it ...
 
 2. Installation
 ---------------
