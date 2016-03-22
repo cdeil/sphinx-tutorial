@@ -279,6 +279,9 @@ We're all set up to write some documentation ...
 
 Now let's write some documentation.
 
+Introduction
+++++++++++++
+
 This is done by adding text to ``docs/index.rst``, or by adding extra ``.rst``
 text files in ``docs`` and writing text using RST format there.
 
@@ -288,12 +291,29 @@ Writing documentation is a cycle similar to writing code:
 2. Run ``make html``
 3. Check output HTML files
 
+For the following exercises, and generally while learning how to write RST,
+it's very helpful to have the "reStructuredText Primer" page from the Sphinx docs open:
+http://www.sphinx-doc.org/en/stable/rest.html
 
+Exercise 1
+++++++++++
 
+* Edit ``index.rst`` and add this line after the title::
 
-* Add some content on ``index.rst`` page.
+    Hello world!
 
-You can import and use it::
+* Run ``make html``
+* Refresh the browser and watch the text appear in the HTML output.
+
+Exercise 2
+++++++++++
+
+* Add a `sub-section <http://www.sphinx-doc.org/en/stable/rest.html#sections>`__
+  called "Getting started".
+* Add the `paragraph <http://www.sphinx-doc.org/en/stable/rest.html#paragraphs>`__
+  "The ``astrospam`` module provides:" followed by a `list <http://www.sphinx-doc.org/en/stable/rest.html#lists-and-quote-like-blocks>`__
+  with entries ``Ham`` and ``spam``.
+* Add a `code example <http://www.sphinx-doc.org/en/stable/rest.html#source-code>`__::
 
     $ python
     >>> import astrospam
@@ -302,6 +322,9 @@ You can import and use it::
     Spam
     Spam
     >>> exit()
+
+Exercise 3
+++++++++++
 
 * TODO: something that causes a Sphinx warning
 * TODO: something that causes a Sphinx error
