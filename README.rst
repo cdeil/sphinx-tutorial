@@ -42,19 +42,42 @@ If you want to learn more, please go back and read the info on those pages
 after the tutorial on your own.
 
 * We won't talk about `this Sphinx <https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Great_Sphinx_of_Giza_-_20080716a.jpg/800px-Great_Sphinx_of_Giza_-_20080716a.jpg>`_.
-* `Wikipedia on Sphinx (documentation generator) <https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)>`__
-* http://www.sphinx-doc.org/, especially the
+  (I don't know why the Sphinx documentation generator was given that name.)
+* To get some basic info on Sphinx, read the
+  `Wikipedia on Sphinx (documentation generator) <https://en.wikipedia.org/wiki/Sphinx_(documentation_generator)>`__
+  or the welcome page of the Sphinx website at http://www.sphinx-doc.org/ .
+* The most useful pages in the Sphinx documentation to get started are the
   `Sphinx tutorial <http://www.sphinx-doc.org/en/stable/tutorial.html>`__
   and the `reStructuredText Primer <http://www.sphinx-doc.org/en/stable/rest.html>`__
-* https://en.wikipedia.org/wiki/ReStructuredText
-* http://www.sphinx-doc.org/en/stable/man/sphinx-apidoc.html
-* https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
-* http://www.sphinx-doc.org/en/stable/ext/napoleon.html
-* https://readthedocs.org/
-* Examples of projects using Sphinx (almost all Python projects do):
-  `Python <https://docs.python.org/3/>`__
+* Almost all Python projects use reStructured text (RST) and Sphinx for documentation.
+  Examples: `Python <https://docs.python.org/3/>`__
   `Astropy <http://astropy.readthedocs.org/en/latest/>`__,
   `Astroplan <http://astroplan.readthedocs.org/>`__
+* As the `Wikipedia article on reStructuredText (RST) <https://en.wikipedia.org/wiki/ReStructuredText>`__
+  explains, RST is a markup language (like LaTeX or Markdown) that is mostly used for Python docstrings (in ``.py`` files)
+  and high-level documentation (in ``.rst`` files).
+* Sphinx is the tool that takes RST as input and produces HTML or PDF as output.
+  To be more precise, Sphinx is a Python package that is mostly used via the command line tools
+  ``sphinx-quickstart`` and ``sphinx-build`` (which again you typically invoke via a ``Makefile``).
+* `Python docstrings <https://en.wikipedia.org/wiki/Docstring#Python>`__ are extracted by
+  the Sphinx "autodoc" feature to auto-generate API (application programming interface) docs.
+  There's a few different formats for docstrings in use that Sphinx supports.
+* The one all scientific Python packages (Numpy, Scipy, Astropy, ...) use is called the
+  `Numpy docstring standard <https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt>`__
+  which as added as a built-in Sphinx extension called
+  `sphinx.ext.napoleon <http://www.sphinx-doc.org/en/stable/ext/napoleon.html>`__
+  (I don't know why it was called Napoleon.)
+* Once documentation is set up for your package, it's typically easy to generate HTML
+  output by just running ``make html`` which calls ``sphinx-build``,
+  or by executing ``python setup.py build_sphinx`` which runs the Sphinx build.
+  Then you can look at the output by just opening up ``index.html`` in some output
+  directory where the HTML docs have been generated.
+  Working on documentation is then a matter of editing ``.rst`` or ``.py`` files,
+  running ``make html`` and checking the HTML output or console for errors and warnings.
+* Finally, if you want to host the generated HTML, the free https://readthedocs.org/
+  and https://pages.github.com/ services are good options.
+  We won't have time to cover those today, feel free to ask us after if you want to
+  learn how they work or want help to set it up for your project.
 
 Let's go ahead with our hands-on introduction to Sphinx and start using it ...
 
