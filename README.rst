@@ -328,7 +328,33 @@ Exercise 2
 Exercise 3
 ++++++++++
 
-* Add a sub-page ``tutorial.rst`` and some more content there.
+* Add a sub-page ``docs/tutorial.rst`` and copy & paste the following content there::
+
+    Tutorial
+    ========
+
+    This is the ``astrospam`` tutorial.
+
+    Part 1
+    ------
+
+    Spam, spam, spam ...
+
+    Part 2
+    ------
+
+    More spam!
+
+    TODO: link to Youtube video
+
+Now add that page to the `toctree <http://www.sphinx-doc.org/en/stable/markup/toctree.html>`__
+directive in ``index.rst``::
+    
+    .. toctree::
+       :maxdepth: 2
+
+       tutorial
+
 
 Exercise 4
 ++++++++++
@@ -350,12 +376,14 @@ The HTML output will still be OK .. it's just a warning.
 Exercise 5
 ++++++++++
 
-* TODO: something that causes a Sphinx error
+Let's see what happens if you make an error in a Sphinx directive.
 
-Next steps
-++++++++++
+E.g. you could change the ``toctree` directive in ``index.rst`` to ``toctreeeeeee``:
 
-If you'd like to learn more ...
+    .. toctreeeeeee::
+       :maxdepth: 2
+
+Now you'll get an error an the TOC will be missing in the output.
 
 5. Autodoc
 ----------
