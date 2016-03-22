@@ -138,16 +138,6 @@ As you can see, there is a Python package called ``astrospam``::
         ├── pyastro16.py
         └── spam.py
 
-You can import and use it::
-
-    $ python
-    >>> import astrospam
-    >>> astrospam.spam()
-    Spam
-    Spam
-    Spam
-    >>> exit()
-
 But there's no HTML documentation for it. Let's change that!
 
 sphinx-quickstart
@@ -286,11 +276,36 @@ We're all set up to write some documentation ...
 4. RST
 ------
 
+Now let's write some documentation.
+
+This is done by adding text to ``docs/index.rst``, or by adding extra ``.rst``
+text files in ``docs`` and writing text using RST format there.
+
+Writing documentation is a cycle similar to writing code:
+
+1. Edit ``.rst`` files
+2. Run ``make html``
+3. Check output HTML files
+
+
+
 
 * Add some content on ``index.rst`` page.
-* Add a sub-page ``tutorial.rst`` and some more content there.
+
+You can import and use it::
+
+    $ python
+    >>> import astrospam
+    >>> astrospam.spam()
+    Spam
+    Spam
+    Spam
+    >>> exit()
+
 * TODO: something that causes a Sphinx warning
 * TODO: something that causes a Sphinx error
+
+* Add a sub-page ``tutorial.rst`` and some more content there.
 
 5. Autodoc
 ----------
