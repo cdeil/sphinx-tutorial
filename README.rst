@@ -99,6 +99,11 @@ Please install it now via::
     
     $ pip install sphinx_rtd_theme
 
+Before we continue, everyone please check that you're set up::
+    
+    $ sphinx-build --version
+    Sphinx (sphinx-build) 1.3.6
+    $ python -c 'import sphinx_rtd_theme' # should not give an ImportError, no output.
 
 3. Quickstart
 -------------
