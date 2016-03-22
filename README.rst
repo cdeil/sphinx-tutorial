@@ -345,7 +345,7 @@ Exercise 3
 
     More spam!
 
-    TODO: link to Youtube video
+    https://youtu.be/anwy2MPT5RE
 
 Now add that page to the `toctree <http://www.sphinx-doc.org/en/stable/markup/toctree.html>`__
 directive in ``index.rst``::
@@ -378,7 +378,7 @@ Exercise 5
 
 Let's see what happens if you make an error in a Sphinx directive.
 
-E.g. you could change the ``toctree` directive in ``index.rst`` to ``toctreeeeeee``:
+E.g. you could change the ``toctree`` directive in ``index.rst`` to ``toctreeeeeee``:
 
     .. toctreeeeeee::
        :maxdepth: 2
