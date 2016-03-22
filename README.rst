@@ -388,7 +388,12 @@ Now you'll get an error an the TOC will be missing in the output.
 5. Autodoc
 ----------
 
-Add a simple module ``pyastro16.py`` with the following content:
+Run these commands::
+
+  mkdir -p docs/_templates/autosummary
+  wget https://raw.githubusercontent.com/astropy/package-template/a956da77759743b06db99d207b8e1e1a9eaf8a87/docs/_templates/autosummary/base.rst
+  wget https://raw.githubusercontent.com/astropy/package-template/a956da77759743b06db99d207b8e1e1a9eaf8a87/docs/_templates/autosummary/class.rst
+  wget https://raw.githubusercontent.com/astropy/package-template/a956da77759743b06db99d207b8e1e1a9eaf8a87/docs/_templates/autosummary/module.rst
 
 
 TODO: link from docstrings to docs in RST file and the other way around.
