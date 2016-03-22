@@ -206,7 +206,8 @@ Now we're all set up to generate HTML docs::
     Build finished. The HTML pages are in _build/html.
 
 Now open up ``_build/html/index.html`` in your webbrowser.
-On Mac you can do:
+
+On Mac you can do::
 
     $ open _build/html/index.html
 
