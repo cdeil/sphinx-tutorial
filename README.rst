@@ -18,8 +18,13 @@ content to create and how to structure it.
 You are encouraged to follow along, i.e. try out every step on your computer
 after we demo it.
 
+Before we start:
+
+* Who has run Sphinx before (i.e. run ``sphinx-build`` or ``make html`` or ``python setup.py build_sphinx``)?
+* Who has set up Sphinx before (i.e. run ``sphinx-quickstart``, edited ``docs/conf.py``)?
+
 **If you have a question, or something isn't working for you, or if I'm going too
-fast, please feel free to interrupt me at any time!**
+fast, please feel free to interrupt us at any time!**
 
 Overview
 ++++++++
@@ -190,7 +195,6 @@ sphinx-build
 
 4. RST
 ------
-
 
 
 * Add some content on ``index.rst`` page.
