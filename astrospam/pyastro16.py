@@ -69,3 +69,11 @@ class PyAstro(object):
         Properties are automatically documented as attributes
         """
         return self._day
+
+
+class PyAstro16(PyAstro):
+    """
+    The 2016 edition of the python in astronomy conference.
+
+    """
+    __doc__ += PyAstro.__doc__
