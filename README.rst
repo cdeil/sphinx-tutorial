@@ -103,7 +103,9 @@ Before we continue, everyone please check that you're set up::
     
     $ sphinx-build --version
     Sphinx (sphinx-build) 1.3.6
-    $ python -c 'import sphinx_rtd_theme' # should not give an ImportError, no output.
+    $ python -c 'import sphinx_rtd_theme'
+    # Should give no output.
+    # If you get an ImportError, `sphinx_rtd_theme` isn't installed correctly.
 
 3. Quickstart
 -------------
@@ -145,6 +147,39 @@ But there's no HTML documentation for it. Let's change that!
 
 sphinx-quickstart
 +++++++++++++++++
+
+To add Sphinx documentation, you run `sphinx-quickstart <http://www.sphinx-doc.org/en/stable/invocation.html#invocation>`__
+
+This will prompt you for some information and then generate a few of files.
+
+For most questions you can just hit ``ENTER`` to accept the default. These are
+the questions where you don't take the default, but actually put something::
+    
+    $ sphinx-quickstart
+
+    Welcome to the Sphinx 1.3.6 quickstart utility.
+
+    > Root path for the documentation [.]: docs
+    > Project name: astrospam
+    > Author name(s): Astrospam developers
+    > Project version: 0.1
+    > autodoc: automatically insert docstrings from modules (y/n) [n]: y
+
+    Finished: An initial directory structure has been created.
+
+The tool created the following files:
+
+* ``docs/conf.py`` -- Sphinx configuration file
+* ``docs/index.rst`` -- Name of your master docs page
+* ``docs/Makefile`` -- Makefile as convenience to run Sphinx (for Linux and Mac OS X)
+* ``docs/make.bat`` -- Makefile for Windows
+
+And the following empty directories:
+
+* ``docs/_build`` -- This is where all output files (e.g. HTML) will go when Sphinx runs.
+* ``docs/_static`` -- A place for static files, e.g. images or css (we won't use it)
+* ``docs/_templates`` -- A place for template files (we won't use it)
+
 
 sphinx-build
 ++++++++++++
