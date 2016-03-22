@@ -174,8 +174,8 @@ the questions where you don't take the default, but actually put something::
 
 The tool created the following files:
 
-* ``docs/conf.py`` -- Sphinx configuration file
-* ``docs/index.rst`` -- Name of your master docs page
+* ``docs/conf.py`` -- Sphinx configuration file (a Python file)
+* ``docs/index.rst`` -- Name of your master docs page (a reStructuredText, aka RST file)
 * ``docs/Makefile`` -- Makefile as convenience to run Sphinx (for Linux and Mac OS X)
 * ``docs/make.bat`` -- Makefile for Windows
 
@@ -185,13 +185,103 @@ And the following empty directories:
 * ``docs/_static`` -- A place for static files, e.g. images or css (we won't use it)
 * ``docs/_templates`` -- A place for template files (we won't use it)
 
-
 sphinx-build
 ++++++++++++
 
-* Run ``sphinx-quickstart docs``
-* Run ``cd docs && make html``
-* ``make latexpdf``
+Now we're all set up to generate HTML docs::
+
+    $ cd docs
+    $ make html
+    sphinx-build -b html -d _build/doctrees   . _build/html
+    Running Sphinx v1.3.6
+    making output directory...
+    loading pickled environment... not yet created
+    building [mo]: targets for 0 po files that are out of date
+    building [html]: targets for 1 source files that are out of date
+    updating environment: 1 added, 0 changed, 0 removed
+    reading sources... [100%] index                                                                        
+    looking for now-outdated files... none found
+    pickling environment... done
+    checking consistency... done
+    preparing documents... done
+    writing output... [100%] index                                                                         
+    generating indices... genindex
+    writing additional pages... search
+    copying static files... done
+    copying extra files... done
+    dumping search index in English (code: en) ... done
+    dumping object inventory... done
+    build succeeded.
+
+    Build finished. The HTML pages are in _build/html.
+
+Now open up ``_build/html/index.html`` in your webbrowser.
+On Mac you can do:
+
+    $ open _build/html/index.html
+
+Sphinx has generated a documentation webpage for you (with a sidebar, search
+field, main content area, footer)!
+
+There's some other things you can do. Type ``make`` or ``make help`` to find out::
+
+    $ make
+    Please use `make <target>' where <target> is one of
+      html       to make standalone HTML files
+      dirhtml    to make HTML files named index.html in directories
+      singlehtml to make a single large HTML file
+      pickle     to make pickle files
+      json       to make JSON files
+      htmlhelp   to make HTML files and a HTML help project
+      qthelp     to make HTML files and a qthelp project
+      applehelp  to make an Apple Help Book
+      devhelp    to make HTML files and a Devhelp project
+      epub       to make an epub
+      latex      to make LaTeX files, you can set PAPER=a4 or PAPER=letter
+      latexpdf   to make LaTeX files and run them through pdflatex
+      latexpdfja to make LaTeX files and run them through platex/dvipdfmx
+      text       to make text files
+      man        to make manual pages
+      texinfo    to make Texinfo files
+      info       to make Texinfo files and run them through makeinfo
+      gettext    to make PO message catalogs
+      changes    to make an overview of all changed/added/deprecated items
+      xml        to make Docutils-native XML files
+      pseudoxml  to make pseudoxml-XML files for display purposes
+      linkcheck  to check all external links for integrity
+      doctest    to run all doctests embedded in the documentation (if enabled)
+      coverage   to run coverage check of the documentation (if enabled)
+    
+If you have ``pdflatex`` installed, you can try making a PDF version of your docs::
+
+    $ make latexpdf
+    sphinx-build -b latex -d _build/doctrees   . _build/latex
+    Running Sphinx v1.3.6
+    making output directory...
+    loading pickled environment... done
+    building [mo]: targets for 0 po files that are out of date
+    building [latex]: all documents
+    updating environment: 0 added, 0 changed, 0 removed
+    looking for now-outdated files... none found
+    processing astrospam.tex... index 
+    resolving references...
+    writing... done
+    copying TeX support files...
+    done
+    build succeeded.
+    Running LaTeX files through pdflatex...
+
+    ... 1000 lines of horrible LaTeX log output ... 
+
+    Output written on astrospam.pdf (7 pages, 43725 bytes).
+    Transcript written on astrospam.log.
+    pdflatex finished; the PDF files are in _build/latex.
+
+Open up ``_build/latex/astrospam.pdf`` and have a look::
+
+    $ open _build/latex/astrospam.pdf
+
+We're all set up to write some documentation ...
 
 4. RST
 ------
