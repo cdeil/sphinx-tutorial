@@ -328,6 +328,11 @@ Exercise 2
 Exercise 3
 ++++++++++
 
+* Add a sub-page ``tutorial.rst`` and some more content there.
+
+Exercise 4
+++++++++++
+
 Let's see what happens if we make an ``RST`` formatting mistake.
 
 Remove some underline characters from the title::
@@ -342,15 +347,15 @@ and give a helpful message what the problem is::
 
 The HTML output will still be OK .. it's just a warning.
 
-Exercise 4
+Exercise 5
 ++++++++++
 
 * TODO: something that causes a Sphinx error
 
-Exercise 5
+Next steps
 ++++++++++
 
-* Add a sub-page ``tutorial.rst`` and some more content there.
+If you'd like to learn more ...
 
 5. Autodoc
 ----------
