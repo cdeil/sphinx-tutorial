@@ -111,16 +111,37 @@ Before we continue, everyone please check that you're set up::
 Let's say you have a Python project consisting of a few ``.py`` files,
 and would like to use Sphinx to generate HTML or PDF documentation for it.
 
-As an example for today's tutorial, please grab this repo:
+Example package
++++++++++++++++
+
+As an example for today's tutorial, please grab this repo::
 
     $ git clone https://github.com/cdeil/sphinx-tutorial
     $ cd sphinx-tutorial
 
-As you can see, there is a Python package called ``astrospam``:
+As you can see, there is a Python package called ``astrospam``::
 
     $ tree .
-    TODO
+    .
+    ├── LICENSE
+    ├── README.rst
+    └── astrospam
+        ├── __init__.py
+        ├── ham.py
+        ├── pyastro16.py
+        └── spam.py
 
+You can import and use it::
+
+    $ python
+    >>> import astrospam
+    >>> astrospam.spam()
+    Spam
+    Spam
+    Spam
+    >>> exit()
+
+But there's no HTML documentation for it. Let's change that!
 
 sphinx-quickstart
 +++++++++++++++++
