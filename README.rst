@@ -29,13 +29,13 @@ fast, please feel free to interrupt us at any time!**
 Overview
 ++++++++
 
-1. `Introduction <https://gist.github.com/cdeil/1ec8b694aea3952f5267#1-introduction>`__
-2. `Installation <https://gist.github.com/cdeil/1ec8b694aea3952f5267#2-installation>`__
-3. `Quickstart <https://gist.github.com/cdeil/1ec8b694aea3952f5267#3-quickstart>`__
-4. `RST <https://gist.github.com/cdeil/1ec8b694aea3952f5267#4-RST>`__
-5. `Autodoc <https://gist.github.com/cdeil/1ec8b694aea3952f5267#5-autodoc>`__
-6. `Theme <https://gist.github.com/cdeil/1ec8b694aea3952f5267#6-theme>`__
-7. `Final comments <https://gist.github.com/cdeil/1ec8b694aea3952f5267#7-final-comments>`__
+1. `Introduction <https://github.com/cdeil/sphinx-tutorial#1-introduction>`__
+2. `Installation <https://github.com/cdeil/sphinx-tutorial#2-installation>`__
+3. `Quickstart <https://github.com/cdeil/sphinx-tutorial#3-quickstart>`__
+4. `RST <https://github.com/cdeil/sphinx-tutorial#4-RST>`__
+5. `Autodoc <https://github.com/cdeil/sphinx-tutorial#5-autodoc>`__
+6. `Theme <https://github.com/cdeil/sphinx-tutorial#6-theme>`__
+7. `Final comments <https://github.com/cdeil/sphinx-tutorial#7-final-comments>`__
 
 1. Introduction
 ---------------
