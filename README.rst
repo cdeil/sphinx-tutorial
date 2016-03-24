@@ -32,7 +32,7 @@ Overview
 1. `Introduction <https://github.com/cdeil/sphinx-tutorial#1-introduction>`__
 2. `Installation <https://github.com/cdeil/sphinx-tutorial#2-installation>`__
 3. `Quickstart <https://github.com/cdeil/sphinx-tutorial#3-quickstart>`__
-4. `RST <https://github.com/cdeil/sphinx-tutorial#4-RST>`__
+4. `RST <https://github.com/cdeil/sphinx-tutorial#4-rst>`__
 5. `Autodoc <https://github.com/cdeil/sphinx-tutorial#5-autodoc>`__
 6. `Theme <https://github.com/cdeil/sphinx-tutorial#6-theme>`__
 7. `Final comments <https://github.com/cdeil/sphinx-tutorial#7-final-comments>`__
